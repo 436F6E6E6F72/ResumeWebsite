@@ -1,0 +1,89 @@
+:root{
+    --main-bg-color: #00171F;
+    --main-font-color: #00A8E8;
+    --minor-font-color: #007EA7;
+    --header-font-color: #FFFFFF;
+    --misc-color: #003459;
+}
+.centerCard {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--misc-color);
+}
+.container-social{
+    position: fixed;
+    color: var(--misc-color);
+    width: 40px;
+    left: 5%;
+}
+.headerTitleText {
+    padding-top: 25%;
+    font-size: 20px;
+    padding-left: 40px;
+    color: var(--minor-font-color);
+    font-family: 'Roboto', sans-serif; 
+    text-align: left;
+    margin-bottom: 0;
+}
+.headerName{
+    font-size: 65px;
+    padding-left: 40px;
+    color: var(--main-font-color);
+    font-family: 'Roboto', sans-serif; 
+    text-align: left;
+    page-break-after: always;
+    margin-bottom: 100%;
+}
+.background {
+    background-color: var(--main-bg-color);
+    color: var(--minor-font-color);
+}
+.titleText{
+    color: var(--header-font-color);
+}
+@media screen and (max-width: 767px) {
+.mobile-space {
+    margin-top:0rem;
+}
+}
+.animationIcon{
+    left: -100px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-name: IconFlyIn;
+    animation-fill-mode: forwards;
+    position: fixed;
+}
+@keyframes IconFlyIn{
+    0%   {color:transparent; left:0px;}
+    100%   {color:--misc-color; left:5%;}
+}
+.cardFlyIn{
+    position:relative;
+    animation-duration: 1s;
+    animation-name: cardInLeft;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes cardInLeft{
+    0%   {
+        background-color:transparent; 
+        color: transparent;
+        Right:100px;}
+    100%   {
+        background-color:var(--misc-color); 
+        color:var(--header-font-color);
+        Right:20%;}
+}
+
+@keyframes cardInRight{
+    0%   {
+        background-color:transparent; 
+        color: transparent;
+        Left:100px;}
+    100%   {
+        background-color:var(--misc-color); 
+        color:var(--header-font-color);
+        Left:20%;}
+}
