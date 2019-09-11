@@ -4,3 +4,10 @@ $(window).scroll(function(){
       $("#scrolltest1Parent").addClass('cardFlyIn');
     };
 });
+
+$(".nav ul li").on("click", function() {
+  $(".nav li").removeClass("active");
+  $(this).addClass("active");
+  console.log("test");
+});
+
